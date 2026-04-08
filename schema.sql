@@ -25,3 +25,4 @@ create policy "Users can update their own movies" on watched_movies
 create policy "Users can delete their own movies" on watched_movies
   for delete
   using (auth.uid() = user_id);
+
